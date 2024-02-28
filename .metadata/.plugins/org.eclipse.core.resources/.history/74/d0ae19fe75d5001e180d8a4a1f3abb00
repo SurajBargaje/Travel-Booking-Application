@@ -1,0 +1,22 @@
+package com.pravass.project.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pravass.project.repository.LoginRepository;
+
+@RestController
+public class LoginController {
+	@Autowired
+	LoginRepository loginrepo;
+
+	
+	@GetMapping("/loginPage")
+	public String getLogin() {
+		return "Login";
+	}
+	
+
+
+}
