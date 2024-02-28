@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Registration {
 	
-	@GeneratedValue
+	
 	@Column(name = "Id")
 	private int Id;
 	

@@ -6,4 +6,6 @@ import com.pravass.project.model.Registration;
 
 public interface RegistrationReopsitory extends JpaRepository <Registration,String> {
 
+	Registration findByEmail(String email);
+
 }
