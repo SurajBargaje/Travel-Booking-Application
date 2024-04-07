@@ -7,11 +7,13 @@ import jakarta.persistence.Id;
 
 @Entity
 
+
 public class Login {
 	
 	@Id
 	@Column(name="Email")
 	private String email;
+	
 	@Column(name="Password")
 	private String password;
 	public String getEmail() {

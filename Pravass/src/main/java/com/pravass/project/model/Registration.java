@@ -16,6 +16,7 @@ public class Registration {
 	private String name;
 	
 	@Id
+	
 	@Column(name = "Email")
 	private String email;
 	
@@ -118,9 +119,11 @@ public class Registration {
 
 	@Override
 	public String toString() {
-		return "Registration [Id=" + Id + ", name=" + name + ", email=" + email + ", password=" + password + ", DOB="
+		return "Registration [ name=" + name + ", email=" + email + ", password=" + password + ", DOB="
 				+ DOB + ", contact=" + contact + ", country=" + country + ", state=" + state + "]";
 	}
+
+
 	
 	
 }
